@@ -20,7 +20,8 @@ const App: React.FC = () => {
 
     setIsLoading(true);
     try {
-      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL || ''}/api/synthesize`, {
+      const backendUrl = (import.meta as any).env.VITE_BACKEND_URL || '';
+      const response = await fetch(`${backendUrl}/api/synthesize`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
