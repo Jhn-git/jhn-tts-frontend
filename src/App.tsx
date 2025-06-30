@@ -91,7 +91,7 @@ const App: React.FC = () => {
             e.currentTarget.style.transform = 'scale(1)';
           }}
         >
-          Jhn's Main Page
+          Jhn's Main
         </button>
       </div>
 
